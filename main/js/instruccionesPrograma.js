@@ -1,5 +1,3 @@
-
-
 //Muestra en pantalla el archivo seleccionado y el número de instrucciones
 document.getElementById('fileInput').addEventListener('change', function(e) {
     var file = e.target.files[0];
