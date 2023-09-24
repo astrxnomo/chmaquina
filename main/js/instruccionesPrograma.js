@@ -6,7 +6,7 @@ document.getElementById('fileInput').addEventListener('change', function(e) {
     reader.onload = function(e) {
         var contents = e.target.result;
         var lines = contents.split('\n');
-        var tableBody = document.getElementById('fileTable').getElementsByTagName('tbody')[0];
+        var tableBody = document.getElementById('tablaInstruccionesPrograma').getElementsByTagName('tbody')[0];
 
         // Limpiar la tabla antes de agregar nuevas líneas
         tableBody.innerHTML = '';
