@@ -1,15 +1,6 @@
 
 
 
-
-//Velocidad
-const sliderVelocidad = document.getElementById("velocidadSlider");
-function updateVelocidadValue(valor) {
-    document.getElementById("velocidadValue").innerHTML = valor;
-}
-const valorVelocidad = slider.value;
-
-
 //Memoria
 const sliderMemoria = document.getElementById("memoriaSlider");
 function updateMemoriaValue(valor) {

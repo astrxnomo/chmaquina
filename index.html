@@ -25,10 +25,11 @@
             </button>
 
             <!--Boton de subir archivo-->
-            <button id="subirArchivoBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Subir programa">
+
+            <button onclick="subirArchivo()" id="subirArchivoBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Subir programa">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM216 408c0 13.3-10.7 24-24 24s-24-10.7-24-24V305.9l-31 31c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l72-72c9.4-9.4 24.6-9.4 33.9 0l72 72c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-31-31V408z"/></svg>
             </button>
-            <input type="file" id="fileInput" accept=".ch" style="display: none;">
+            <input type="file" id="archivoInput" accept=".ch" style="display: none;">
 
             <!--Boton de ejecutar archivo-->
             <button id="ejecutarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ejecutar programa" style="margin-left: 20px">
@@ -218,21 +219,12 @@
             <div class="modal-body">
                 <div class="card">
 
-                    <!--Velocidad-->
-                    <div class="card-body">
-
-                        <label for="velocidadSlider">Velocidad:</label>
-                        <span id="velocidadValue">10</span>
-                        <input oninput="updateVelocidadValue(this.value)"  value="10" type="range" class="form-range" min="10" max="150" id="velocidadSlider">
-
-                    </div>
-
                     <!--Memoria-->
                     <div class="card-body">
 
                         <label for="memoriaSlider">Memoria:</label>
-                        <span id="memoriaValue">100</span>
-                        <input oninput="updateMemoriaValue(this.value)"  value="100" type="range" class="form-range" min="10" max="150" id="memoriaSlider">
+                        <span id="memoriaValue">150</span>
+                        <input oninput="updateMemoriaValue(this.value)"  value="150" type="range" class="form-range" min="10" max="10100" id="memoriaSlider">
 
                     </div>
 
@@ -240,8 +232,8 @@
                     <div class="card-body">
 
                         <label for="kernelSlider">Kernel:</label>
-                        <span id="kernelValue">10</span>
-                        <input oninput="updateKernelValue(this.value)"  value="10" type="range" class="form-range" min="10" max="150" id="kernelSlider">
+                        <span id="kernelValue">109</span>
+                        <input oninput="updateKernelValue(this.value)"  value="109" type="range" class="form-range" min="10" max="200" id="kernelSlider">
 
                     </div>
                 </div>
@@ -259,6 +251,7 @@
 <!-- Incluye tu archivo JavaScript aquí -->
 <script src="src/scripts/footer.js"></script>
 <script src="src/scripts/configuracionSistema.js"></script>
+<script src="src/scripts/subirArchivo.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
