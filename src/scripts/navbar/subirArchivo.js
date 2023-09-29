@@ -58,8 +58,3 @@ function mostrarEnTabla(lineas) {
         spans[i].parentNode.previousElementSibling.innerText = `${posicionVariable.toString().padStart(4, '0')}`;
     }
 }
-
-
-
-
-
