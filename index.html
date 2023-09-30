@@ -198,11 +198,19 @@
 </div>
 
 
-<!--Footer-->
+<!-- Footer -->
 <footer class="footer fixed-bottom bg-primary d-flex justify-content-between p-2">
-    <span id="fileInfo" class="text-white">aa</span>
-    <span id="currentDateTime" class="text-white"></span>
+    <!-- Contenedor para los iconos y el texto -->
+    <div class="left-content d-flex">
+        <!-- Enlaces a redes sociales -->
+        <a href="https://github.com/astrxnomo" target="_blank" class="text-white mr-2"><i class="fab fa-github fa-lg" style="margin-right: 10px"></i></a>
+        <a href="https://www.instagram.com/astrxnomo" target="_blank" class="text-white mr-2"><i class="fa-brands fa-instagram fa-lg"></i></a>
+    </div>
+
+    <!-- Hora en la esquina derecha -->
+    <span id="currentDateTime" class="text-white">18:30</span>
 </footer>
+
 
 <!--Modal | Configuracion del sistema-->
 <div class="modal fade" id="configuracionSistemaModal">
@@ -228,9 +236,6 @@
                         <span id="memoriaValue" ondblclick="startEditing(this)" onblur="finishEditing(this)">150</span>
                         <input oninput="updateMemoriaValue(this.value)" value="150" type="range" class="form-range" min="10" max="10100" id="memoriaSlider">
                     </div>
-
-
-
 
                 </div>
                 <div class="modal-footer">
