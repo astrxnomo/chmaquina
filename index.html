@@ -52,6 +52,10 @@
             <button id="reiniciarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Salir">
                 <i class="fa-solid fa-rotate-left fa-lg"></i>
             </button>
+
+            <button id="siguienteBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Siguiente paso">
+                Siguiente
+            </button>
         </div>
     </div>
 </nav>
@@ -135,7 +139,9 @@
         <div class="col-lg-4">
             <div class="card" style="margin-top: 15px; max-height: 110px; height: 110px; overflow: auto">
                 <div class="card-header text-center">Acumulador</div>
-                <div class="card-body table-responsive text-center fs-1" style="padding: unset"></div>
+                <div class="card-body table-responsive text-center fs-1" style="padding: unset">
+                    <span id="acumuladorValor">0</span>
+                </div>
             </div>
 
             <!--Memoria principal-->
@@ -149,7 +155,7 @@
                             <th>Contenido</th>
                         </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody id="memoriaBody"></tbody>
                     </table>
 
                 </div>
@@ -257,7 +263,7 @@
 <script src="src/scripts/tablas/tablaInstruccionesPrograma.js"></script>
 <script src="src/scripts/tablas/tablaVariables.js"></script>
 <script src="src/scripts/tablas/tablaEtiquetas.js"></script>
-<script src="src/scripts/tablas/tablaMemoria.js"></script>
+
 
 <script src="src/scripts/info/horayfecha.js"></script>
 
