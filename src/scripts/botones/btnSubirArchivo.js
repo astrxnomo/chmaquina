@@ -38,7 +38,7 @@ function leerYMostrarArchivo(archivo) {
         mostrarTablaInstrucciones(lineas);
         mostrarTablaVariables(lineas);
         mostrarTablaEtiquetas(lineas);
-        mostrarTablaMemoria();
+
 
         // Deshabilitar el botón de configuración del sistema
         const botonConfiguracion = document.getElementById('configuracionSistemaBtn');
