@@ -11,54 +11,56 @@
 
 <body style="padding-top: 4rem">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">CH MÁQUINA</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">CH MÁQUINA</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars fa-lg"></i>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-
-            <!--Boton de configuracion del sistema, ajutar Velocidad, memoria y kernel-->
-            <button id="configuracionSistemaBtn" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#configuracionSistemaModal"
-                    data-bs-toggle="tooltip" data-bs-placement="bottom" title="Configuración del sistema">
-                <i class="fa-solid fa-gear fa-lg"></i>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fa-lg"></i>
             </button>
 
-            <!--Boton de subir archivo-->
-            <button onclick="subirArchivo()" id="subirArchivoBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Subir programa">
-                <i class="fa-solid fa-file-arrow-up fa-lg"></i>
-            </button>
-            <input type="file" id="archivoInput" accept=".ch" style="display: none;">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
-            <!--Boton de ejecutar archivo-->
-            <button id="ejecutarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ejecutar programa" style="margin-left: 20px">
-                <i class="fa-solid fa-circle-play fa-lg"></i>
-            </button>
+                <!--Boton de configuracion del sistema, ajutar Velocidad, memoria y kernel-->
+                <button id="configuracionSistemaBtn" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#configuracionSistemaModal"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Configuración del sistema">
+                    <i class="fa-solid fa-gear fa-lg"></i>
+                </button>
 
-            <!--Boton de pausar archivo-->
-            <button id="pausarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pausar programa">
-                <i class="fa-solid fa-circle-pause fa-lg"></i>
-            </button>
+                <!--Boton de subir archivo-->
+                <button onclick="subirArchivo()" id="subirArchivoBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Subir programa">
+                    <i class="fa-solid fa-file-arrow-up fa-lg"></i>
+                </button>
+                <input type="file" id="archivoInput" accept=".ch" style="display: none;">
 
-            <!--Boton paso a paso-->
-            <button id="pasoapasoBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Paso a Paso" style="margin-left: 20px">
-                <i class="fa-solid fa-shoe-prints fa-lg"></i>
-            </button>
+                <!--Boton de ejecutar archivo-->
+                <button id="ejecutarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ejecutar programa" style="margin-left: 20px">
+                    <i class="fa-solid fa-circle-play fa-lg"></i>
+                </button>
 
-            <!--Boton reiniciar-->
-            <button id="reiniciarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Salir">
-                <i class="fa-solid fa-rotate-left fa-lg"></i>
-            </button>
+                <!--Boton de pausar archivo-->
+                <button id="pausarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pausar programa">
+                    <i class="fa-solid fa-circle-pause fa-lg"></i>
+                </button>
 
-            <button id="siguienteBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Siguiente paso">
-                Siguiente
-            </button>
+                <!--Boton paso a paso-->
+                <button id="pasoapasoBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Paso a Paso" style="margin-left: 20px">
+                    <i class="fa-solid fa-shoe-prints fa-lg"></i>
+                </button>
+
+                <!--Boton reiniciar-->
+                <button id="reiniciarBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Salir">
+                    <i class="fa-solid fa-rotate-left fa-lg"></i>
+                </button>
+
+                <button id="siguienteBtn" type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Siguiente paso">
+                    Siguiente
+                </button>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
 <div class="container-fluid mt-auto">
     <div class="row" style="margin-bottom: 50px">
